@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c09c44c2-3b89-44e1-9749-5d0b71f859b9" name="Default Changelist" comment="" />
+    <list default="true" id="c09c44c2-3b89-44e1-9749-5d0b71f859b9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/articles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/errors/BadRequestError.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/errors/EmailError.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/errors/ForbiddenError.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/errors/NotFoundError.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/errors/TokenError.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/logger.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/requestValidation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/article.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/articles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +50,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -29,10 +67,46 @@
       <option name="presentableId" value="Default" />
       <updated>1602966515926</updated>
       <workItem from="1602966517025" duration="146000" />
+      <workItem from="1602966763015" duration="3697000" />
+      <workItem from="1603108179693" duration="11141000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1213" height="269" key="GridCell.Tab.0.bottom" timestamp="1603046608944">
+      <screen x="0" y="23" width="1792" height="1037" />
+    </state>
+    <state width="1213" height="269" key="GridCell.Tab.0.bottom/0.23.1792.1034@0.23.1792.1034" timestamp="1602968174114" />
+    <state width="1213" height="269" key="GridCell.Tab.0.bottom/0.23.1792.1037@0.23.1792.1037" timestamp="1603046608944" />
+    <state width="1213" height="269" key="GridCell.Tab.0.center" timestamp="1603046608943">
+      <screen x="0" y="23" width="1792" height="1037" />
+    </state>
+    <state width="1213" height="269" key="GridCell.Tab.0.center/0.23.1792.1034@0.23.1792.1034" timestamp="1602968174113" />
+    <state width="1213" height="269" key="GridCell.Tab.0.center/0.23.1792.1037@0.23.1792.1037" timestamp="1603046608943" />
+    <state width="1213" height="269" key="GridCell.Tab.0.left" timestamp="1603046608943">
+      <screen x="0" y="23" width="1792" height="1037" />
+    </state>
+    <state width="1213" height="269" key="GridCell.Tab.0.left/0.23.1792.1034@0.23.1792.1034" timestamp="1602968174112" />
+    <state width="1213" height="269" key="GridCell.Tab.0.left/0.23.1792.1037@0.23.1792.1037" timestamp="1603046608943" />
+    <state width="1213" height="269" key="GridCell.Tab.0.right" timestamp="1603046608944">
+      <screen x="0" y="23" width="1792" height="1037" />
+    </state>
+    <state width="1213" height="269" key="GridCell.Tab.0.right/0.23.1792.1034@0.23.1792.1034" timestamp="1602968174113" />
+    <state width="1213" height="269" key="GridCell.Tab.0.right/0.23.1792.1037@0.23.1792.1037" timestamp="1603046608944" />
   </component>
 </project>

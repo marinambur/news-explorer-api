@@ -2,13 +2,12 @@ const bcrypt = require('bcryptjs');
 // eslint-disable-next-line
 const jwt = require('jsonwebtoken');
 const User = require('../models/user');
-///const NotFoundError = require('../errors/NotFoundError');
-//const TokenError = require('../errors/TokenError');
-//const EmailError = require('../errors/EmailError');
+const TokenError = require('../errors/TokenError');
+const EmailError = require('../errors/EmailError');
 
 module.exports.createUser = (req, res, next) => {
   const {
-    email, password, name
+    email, password, name,
   } = req.body;
   bcrypt.hash(password, 10)
     .then((hash) => User.create({
@@ -21,7 +20,7 @@ module.exports.createUser = (req, res, next) => {
         throw new EmailError({ message: 'Пользователь с таким email уже зарегистрирован' });
       } else next(err);
     })// eslint-disable-next-line
-    .then(({ _id, email }) => {
+        .then(({_id, email}) => {
       res.status(201).send({ _id, email });
     })
     .catch(next);
@@ -34,14 +33,14 @@ module.exports.getUsers = (req, res, next) => {
 };
 
 module.exports.getUser = (req, res, next) => {
-    User.findById(req.user._id)
-        .then((user) => res.send({
-            data: {
-                email: user.email,
-                name: user.name,
-            },
-        }))
-        .catch(next);
+  User.findById(req.user._id)
+    .then((user) => res.send({
+      data: {
+        email: user.email,
+        name: user.name,
+      },
+    }))
+    .catch(next);
 };
 
 module.exports.login = (req, res, next) => {

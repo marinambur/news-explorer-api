@@ -45,8 +45,7 @@ const articleSchema = new mongoose.Schema({
     select: false,
   },
   date: {
-    type: Date,
-    default: Date.now,
+    type: String,
     required: true,
   },
 }, { versionKey: false });

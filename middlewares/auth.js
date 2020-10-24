@@ -1,4 +1,3 @@
-// middlewares/auth.js
 // eslint-disable-next-line
 const jwt = require('jsonwebtoken');
 // eslint-disable-next-line

@@ -6,7 +6,6 @@ const routes = require('./routes');
 const helmet = require('helmet');
 const cors = require('cors');
 const app = express();
-app.use(cors());
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 const limiter = require('./configs/limiter');
 
@@ -43,6 +42,7 @@ app.use((err, req, res, next) => {
   res.status(500).send({ message: `На сервере произошла ошибка: ${err.message}` });
   next();
 });
+app.use(cors());
 app.use(helmet());
 app.use(limiter);
 app.listen(PORT, () => {

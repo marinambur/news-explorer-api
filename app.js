@@ -4,9 +4,12 @@ const bodyParser = require('body-parser');
 const { errors } = require('celebrate');
 const routes = require('./routes');
 const helmet = require('helmet');
+const cors = require('cors');
 const app = express();
+app.use(cors());
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 const limiter = require('./configs/limiter');
+
 
 const {
   PORT = 3000,

@@ -20,9 +20,10 @@ const createArticle = (req, res, next) => {
 };
 
 const getArticles = (req, res, next) => {
-  Article.find({})
-    .then((cards) => res.send(cards))
-    .catch(next);
+  const owner = req.user._id;
+  Article.find({ owner })
+    .then((articles) => res.send(articles))
+    .catch((err) => next(new BadRequestError(err)));
 };
 
 const deleteArticleById = (req, res, next) => {
